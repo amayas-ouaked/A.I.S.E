@@ -48,8 +48,9 @@
   
   - unlimit : permet d'avoir les limites définies sur le systeme 
   
-  - 
+  - ps : permet de voir les programmes en arriere plan 
   
+  - kill -9 pid : pour tuer de force le programme du pid 
   
   
   
