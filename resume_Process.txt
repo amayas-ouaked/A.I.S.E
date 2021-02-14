@@ -10,4 +10,16 @@
  
  - getppid(): recupere l'id du processus parent 
  
- - 
+ - ps : permet de lister les processus en cours d'execution / ps au : tous les processus en cours d'execution sur la machine 
+  
+ - kill pid : permet de tuer un processus / kill -l : pour lister toutes les possibilités de kill (-2 pid pour sigint : interruption du processus)
+  
+ - wait : permet d'attendre la fin de l'execution d'un processus en arrière plan
+ 
+ - jobs : liste les processus en arrière plan
+ 
+ - man 2 kill : manuel de la fonction kill en C 
+ 
+ -  /dev/shm : repertoire de la RAM 
+ 
+ - droit d'auteur : rwx | 700 / r-- | 400 :read / -w- | 200 : write / --x | 100 : execute  (proprio, group, other)
