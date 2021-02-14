@@ -6,4 +6,8 @@
 
  - Pour creer un processus il faut faire appel a  fork() qui crée un processus fils, exemple dans fork_examples/fork.c : pid_t child= fork(); SI child == 0 alors c'est le fils, pid du fils SINON d'ou la commande wait(NULL) le parent attend que le fils se termine pr qu'il termine 
  
- - fork() crée un processus fils et partage la même mémoire avec le parent, mais si le contenu de l'un d'eux est modifié cette memoire 
+ - fork() crée un processus fils et partage la même mémoire avec le parent(copy on write), mais si le contenu de l'un d'eux est modifié cette memoire sera dupliquée
+ 
+ - getppid(): recupere l'id du processus parent 
+ 
+ - 
