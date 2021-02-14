@@ -1,0 +1,70 @@
+*** Architecture Interne & Systeme d'exploitation ***
+
+  - Le shell est une sorte de TTY
+  
+  - le PTY a comme attributs : hauteur + largeur et Caracteres d'interruption
+  
+  - Pour afficher la taille du shell on utilise la CMD : stty -a (lignes x colonnes)
+  
+  - Quand on redimensionne le shell, ce dernier previent le ptty de sa vraie taille, exemple de redimension du shell 000 : stty -f /dev/ttys000 rows 10  ou cols 5
+  
+  - La commande tty nous fait savoir dans quel terminale se trouvons nous.
+  
+  - echo $0 : nous donne quel programme shell est en cours d'execution (comme zsh, bash, sh, csh)
+  
+  - La commande shellcheck  permet de verifier la compatibilité d'un programme shell
+  
+  - Ctrl s : Suspend temporairement le processus
+  
+  - Ctrl q : reprend le processus
+  
+  - Ctrl z : mets le processus en arriere plan / jobs : pour voir les processus en arriere plan / fg : remettre le processus en premier plan (fg%num_program en background / en bash : fg num_prog)
+  
+  - pipe : example ls | grep ".pdf"
+  
+  - Rediriger la sortie standard vers un fichier : echo "text voulu" > nom_fichier
+  
+  - Rediriger le fichier dans la sortie standard : grep "lettre/mot/phrase du fichier" <./nom_fichier
+  
+  - Creation d'un programme sh (shebang.sh) qui te retourne les valeurs en parametres puis le rendre executable (chmod +x) (comme argv, argc en c)
+  
+  - Creation d'un programme c (shebang.c) faisant la meme fonction que shebang.sh
+  
+  - La commande export PATH=$PWD:$PATH : ajoute en debut le chemin en question (repertoire courant) pour qu'on le retrouve dans le repertoire path du shell (which -a nom de l'executable ajouté)
+  
+  - alias permet de definir un raccourci clavier pour une commande (ex: alias ll=" *Commande* ", pour maintenir cette modification au redemarrage il faudrait l'ajouter dans le fichier .zshrc
+  
+  - usr/bin/time et bin/ls : permettent de voir le temps d'execution d'un programme
+  
+  - Ctrl+a+d pour se detacher du screen d'un programme
+  
+  - gcc -fopenmp pour compiler avec les directives #pragma omp parallele
+  
+  - Test du getenv en C pour afficher le PATH (echo $PATH pour l'afficher sur le shell, on peut egalement l'ajouter dans un fichier shell et l'executer) fichier : getenv.c | executable : getenvpath 
+  
+  - Le 3eme argument du main (char *envp[]) qui est une variable d'environnement, l'exemple fait dans getenvcur.c nous demontre ceci.
+  
+  - export : définit une variable d'environnement
+  
+  - unlimit : permet d'avoir les limites définies sur le systeme 
+  
+  - ps : permet de voir les programmes en arriere plan 
+  
+  - kill -9 pid : pour tuer de force le programme du pid 
+  
+  - lscpu : est la meme chose que cat /proc/cpuinfo
+  
+  - gcc -E prog pour compiler en processant la compilation pour afficher le chemin d'omp.h
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
