@@ -23,3 +23,17 @@
  -  /dev/shm : repertoire de la RAM 
  
  - droit d'auteur : rwx | 700 / r-- | 400 :read / -w- | 200 : write / --x | 100 : execute  (proprio, group, other)
+ 
+ - ifndef : c'est pour ne pas inclure trop de fois le fichier 
+ 
+ - -I -L. : la lib est dans le repertoire courant / -lfoo : se lier a la lib foo
+ 
+ - lsblk | df -H | findmnt -D : liste les disques durs et les partitions 
+ 
+ - le e a la fin dans execution (execvpe, execle...) : utilisation d'un environnement 
+ 
+ - include signal.h pour utiliser les signaux 
+ 
+ - SIGWINCH : signal de changement de dimension de fenetre ( SIGNAL WINDOW CHANGE)
+ 
+ - envoie d'un signal toutes les 3 secondes = alarm(3) : envoi de signaux de maniere periodique 
